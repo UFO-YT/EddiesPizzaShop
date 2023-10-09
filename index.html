@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .wrapper {
+display:grid;
+grid-template-columns: 50% 40%;
+grid-column-gap:1em;
+grid-row-gap:1em;
+}
+#div1 {
+background-color: rgb(36, 9, 9);
+color:#8b76ff;
+}
+#div2 {
+  background-color: rgb(36, 9, 9);
+
+}
+#footer {
+background-color: cadetblue;
+
+}
+    h1 {
+        color: #fffb00;
+    }
+    h2 {
+        color: #fffb00;
+    }
+    p {
+        color:#fffb00;
+    }
+    h3 {
+      color:rgb(255, 69, 63);
+    }
+    h4 {
+      color:rgb(255, 69, 63);
+    }
+    .flyer {
+margin: auto;
+
+
+    }
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #8b76ff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fffb00;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body style="background-color: #443599;">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+  <br><br><br><br><br><br> <br><br><br><br><br><br> <br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br>
+  <img src="Eddies Pizza Shop Logo.png" width="200" height="200">
+</div>
+
+<h1 style="text-align: center;">Eddie's Pizza Shop</h1>
+<span style="color:rgb(255, 69, 63); font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<br><br>
+<img src="Centropizza_header.jpg" width="1915" height="300">
+<br><br><br>
+<div class="wrapper">
+<div id="div1">
+<h1 style="text-align: center; color:rgb(255, 69, 63)">
+Order a pizza Today!
+</h1>
+<img src="6ch716oq9vk11.jpg" width="300" height="400">
+<h2>
+  ^A Classic Eddie Pizza^
+</h2>
+<h2>
+  Only $20!!!!
+</h2>
+<p style="font-size: 5px;">
+  for one slice. A small pizza as depicted contains 8 slices.
+</p>
+<h2>
+  Order a Classic Eddie Pizza today!
+</h2>
+<h3>
+  Please input all info below to order
+</h3>
+<form action="/action_page.php">
+  <label style="color:rgb(255, 69, 63);" for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label style="color:rgb(255, 69, 63);" for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br>
+  <label style="color:rgb(255, 69, 63);" for="lname">Credit Card Info:</label><br>
+  <input type="text" id="lname" name="lname" value="xxxxxxxxxxxxxxxx"><br>
+  <label style="color:rgb(255, 69, 63);" for="lname">Address:</label><br>
+  <input type="text" id="lname" name="lname" value="1234 E example st. City State"><br>
+  <label style="color:rgb(255, 69, 63);" for="lname">Social Security Number:</label><br>
+  <input type="text" id="lname" name="lname" value="xxxxxxxxx"><br>
+  <label style="color:rgb(255, 69, 63);" for="lname">Bank login info:</label><br>
+  <input type="text" id="lname" name="lname" value="*required*"><br><br>
+  <input type="submit" value="Submit">
+  <script>
+    $(function() {
+      $("#visible").click(function() {
+        $('#invisible').toggleClass("show");
+      });
+    });
+  </script>
+  <style>
+    .hide{display:none;}
+    .show{display:block;}
+  </style>
+</form>
+<p id="visible" class="show">
+  Submit Info
+</p>
+<p id="invisible" class="hide">
+Thanks for submitting your info (all info is kept secure...)! A classic Eddie Pizza will be arriving to your location soon...
+</p> 
+</div>
+<div id="div2">
+  <h1 style="text-align: center; color:rgb(255, 69, 63)">
+    Meet Eddie!
+  </h1>
+  <img src="Eddie eatin pizza.png" width="600" height="400">
+  <h1>
+    Eddie!
+  </h1>
+  <h2>
+    A successful Pizza shop buissness owner who has gifted us all with the great Eddie's Pizza Shop.
+  </h2>
+  <img src="commie eddy gibing a speech.png" width="600" height="400">
+  <h2>
+    He's also a Commie!
+  </h2>
+  <h3>
+    Read about it!
+  </h3>
+</div>
+
+</div>
+<br><br>
+<img alt="the expert" src="the expert.png" width="800" height="600" style="width:50%;">
+<h1 style="text-align: center;">
+Learn about Eddie's Pizza Shop from the expert!
+</h1>
+<br>
+<hr style="color:rgb(255, 69, 63)">
+<br>
+<h2 style="text-align: center; color:#f1f1f1; font-size:35px;">
+"Eddie's Pizza Shop Is Amazing. Just excellent. there really isn't any better pizza out there."
+</h2>
+<h3 style="text-align: center; color:white;">
+-Isaac
+</h3>
+<br>
+<h4 style="text-align: center; font-size: 20px; color:white;">
+  I mean yeah, if you need a pizza then Eddie's Pizza Shop is the way to go. <br> Never before have I had a pizza that has made me have so many emotions and revelations before than pizza from Eddie's Pizza Shop. <br> If you need some kick butt pizza that'll blow any other pizza out of the water then you need Eddie's Pizza Shop pizza. <br> So good you'll feel like your in heaven. <br> not your wallet though; that thing'll feel like it's in hell. Worth it though...
+</h4>
+<hr style="color:rgb(255, 69, 63)">
+<br><br>
+<h1 style="text-align: center;">
+  Eddie's Pizza Shop flyer
+</h1>
+<div style="margin:auto;" class="flyer">
+<object data="Eddies Pizza Shop.pdf" type="application/pdf" width="50%" height="1000px">
+</div>
+</object>
+<br><br><br><br>
+<a href="index.html">
+<h1 style="text-align: center; font-size: 50px; color:rgb(109, 197, 255); text-decoration: underline; text-decoration-color:red;">
+  Order pizza from Eddie's Pizza Shop today!!!
+</h1>
+</a>
+<br><br>
+<div id="footer">
+<h3 style="color:#fffb00; padding:20px;">
+  ©Copyright 2023 VanillaSnope
+</h3>
+<img src="Eddies Pizza Shop Logo.png" width="200" height="200">
+<p>
+  ©
+</p>
+
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 
